@@ -45,7 +45,7 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/api.php'));
+                ->group(base_path('routes/v1/api.php'));
 
             /**
              *  Route prefix api/super-admin will use for super-admin.
@@ -53,14 +53,14 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api/super-admin')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/super_admin.php'));
+                ->group(base_path('routes/v1/super_admin.php'));
             /**
              *  Route perfix api/agent will use for agents.
              */
             Route::prefix('api/agent')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/agent.php'));
+                ->group(base_path('routes/v1/agent.php'));
             
             /**
              *  Route prefix api/builder will use for builder 
@@ -68,7 +68,7 @@ class RouteServiceProvider extends ServiceProvider
             Route::prefix('api/builder')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/builder.php'));
+                ->group(base_path('routes/v1/builder.php'));
 
             /**
              *  Routes web will use for web  purpose

@@ -18,6 +18,8 @@ return [
         'passwords' => 'users',
     ],
 
+    // auth()->guard('api')->user()
+    //auth()->guard('web')->user()
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
